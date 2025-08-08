@@ -7,12 +7,19 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 //static import
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.BeforeEach;
+
 public class HelloJUnit5Test {
+	ApplicationContext context;
+	
+	@BeforeEach
+	void createContainer() {		
+		//1. Container 객체생성
+		context = new GenericXmlApplicationContext("classpath:spring-beans.xml");
+	}
 
 	@Test
 	void helloBean() {
-		//1. Container 객체생성
-		ApplicationContext context = new GenericXmlApplicationContext("classpath:spring-beans.xml");
 		//2. Container가 생성한 Hello 스프링빈을 요청하기
 		Hello helloById = (Hello)context.getBean("hello");
 		Hello helloByType = context.getBean("hello", Hello.class);
