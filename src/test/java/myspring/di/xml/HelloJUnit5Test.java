@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
+//static import
 import static org.junit.jupiter.api.Assertions.*;
 
 public class HelloJUnit5Test {
@@ -19,7 +20,10 @@ public class HelloJUnit5Test {
 		//주소를 비교해서 Singleton 인지 확인하기
 		System.out.println(helloById == helloByType);
 		//Assertions.assertSame() 사용
-		Assertions.assertSame(helloById, helloByType);
+		assertSame(helloById, helloByType);
 		
+		//<property name="name" value="스프링" /> 설정을 테스트 한 것임
+		//값 비교하기
+		assertEquals("Hello 스프링", helloByType.sayHello());
 	}
 }
