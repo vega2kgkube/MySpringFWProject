@@ -25,6 +25,7 @@ public class Hello {
 		this.names = list;
 	}
 
+	//setFirstName
 	public void setName(String name) {
 		System.out.println(this.getClass().getName() + "setName() 호출됨 " + name);
 		this.name = name;
