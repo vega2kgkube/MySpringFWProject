@@ -1,9 +1,10 @@
 package myspring.di.xml;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class HelloJUnit5Test {
 
