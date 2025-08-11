@@ -5,11 +5,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+//static import
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(locations = "classpath:spring-beans.xml")
 public class HelloSpringTest {
 	@Autowired
 	Hello hello;
 	
+	@Test
+	void helloBeanByConstructor() {
+		System.out.println(hello.sayHello());
+		//assertEquals(expected, hello.sayHello());
+	}
 	
 }
