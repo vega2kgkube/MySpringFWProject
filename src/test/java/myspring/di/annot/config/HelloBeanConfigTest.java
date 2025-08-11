@@ -9,6 +9,8 @@ import org.springframework.test.context.support.AnnotationConfigContextLoader;
 @ContextConfiguration(
 		classes = HelloBeanConfig.class,
 		loader=AnnotationConfigContextLoader.class)
+//@Configuration을 위한 특별한 컨테이너 클래스인 AnnotationConfigApplicationContext 객체를 로딩해주는 역할
 public interface HelloBeanConfigTest {
+	
 
 }
