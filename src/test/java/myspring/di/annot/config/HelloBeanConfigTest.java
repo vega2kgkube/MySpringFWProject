@@ -1,5 +1,6 @@
 package myspring.di.annot.config;
 
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -18,6 +19,9 @@ public class HelloBeanConfigTest {
 	@Autowired
 	HelloBean hello;
 	
-	
+	@Test
+	void helloBean전략31() {
+		System.out.println(hello.sayHello());
+	}
 
 }
