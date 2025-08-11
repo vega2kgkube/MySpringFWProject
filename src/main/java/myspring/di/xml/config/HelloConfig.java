@@ -32,6 +32,7 @@ public class HelloConfig {
 		Hello hello = new Hello();
 		//스프링 == environment.getProperty("myname11")
 		hello.setName(environment.getProperty("myname11")); 
+		hello.setPrinter(stringPrinter());
 		return hello;
 	}
 }
