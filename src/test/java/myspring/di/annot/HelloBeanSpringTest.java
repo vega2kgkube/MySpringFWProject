@@ -39,6 +39,8 @@ public class HelloBeanSpringTest {
 		
 		assertEquals("Hello 어노테이션", printer.toString());
 		
+		assertEquals(3, hello.getNames().size());
+		
 	}
 	
 }

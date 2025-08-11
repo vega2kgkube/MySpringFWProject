@@ -45,9 +45,9 @@ public class HelloBean {
 		return this.names;
 	}
 
-	public void setNames(List<String> list) {
-		this.names = list;
-	}
+//	public void setNames(List<String> list) {
+//		this.names = list;
+//	}
 
 	//setFirstName
 //	public void setName(String name) {
