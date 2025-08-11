@@ -24,7 +24,8 @@ public class HelloBean {
 	@Resource(name = "${myprinter21}")
 	PrinterBean printer;
 	
-	@Value("Java,SpringFW,SpringBoot")
+	@Value("#{'${mynames21}'.split(',')}")
+	//@Value("Java,SpringFW,SpringBoot")
 	List<String> names;
 
 	public HelloBean() {
