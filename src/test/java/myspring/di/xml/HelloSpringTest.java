@@ -22,6 +22,8 @@ public class HelloSpringTest {
 	void helloBeanByConstructor() {
 		System.out.println(hello.sayHello());
 		assertEquals("Hello 생성자", hello.sayHello());
+		
+		hello.print();
 	}
 	
 }
