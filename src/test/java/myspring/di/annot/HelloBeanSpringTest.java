@@ -41,6 +41,9 @@ public class HelloBeanSpringTest {
 		
 		assertEquals(3, hello.getNames().size());
 		
+		for(String name: hello.getNames()) {
+			System.out.println(name);
+		}
 	}
 	
 }
