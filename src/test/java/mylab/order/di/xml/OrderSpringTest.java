@@ -23,6 +23,7 @@ public class OrderSpringTest {
     public void testShoppingCart() {        
         assertNotNull(cart);
         assertEquals(2, cart.getProducts().size());
+        //cart.getProducts().get(0) 는 Product 타입
         assertEquals("노트북", cart.getProducts().get(0).getName());
         assertEquals("스마트폰", cart.getProducts().get(1).getName());
     }
